@@ -69,11 +69,33 @@
 
             <p>Tem um projeto em mente? Entre em contato comigo!</p>
 
-            <address>
-                <!--elemento semântico usado para definir informações de contato do autor ou proprietário de um documento, artigo ou página. Ela indica aos navegadores e mecanismos de busca quem criou o conteúdo, geralmente incluindo e-mail, URL, endereço físico ou redes sociais -->
-                E-mail: <a href="mauricio@example.com">mauricio@example.com</a> <br>
-                Telefone: <a href="tel:+5511999999999">+5511999999999</a>
-            </address>
+            <form action="">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required> <br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone"> <br>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="projeto">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select> <br>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" cols="30" rows="10" required placeholder="mensagem"></textarea> <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao" name="inscricao">Desejo receber novidades</label>  <br>
+
+                <input type="submit" value="Enviar mensagem">
+
+            </form>
 
         </section>
 
